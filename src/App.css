@@ -1,0 +1,271 @@
+
+.intro{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.introduce {
+  width: 450px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.wave {
+  display: inline-block;
+}
+
+
+.subtitle {
+  font-size: 18px;
+  line-height: 1.4;
+}
+.about-title{
+  margin-bottom: 20px;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+
+}
+
+.about {
+  margin-top: 30px;
+  text-align: start;
+
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.4;
+  color: rgba(68, 68, 68, 0.72);
+}
+
+
+
+.education {
+  margin-top: 50px;
+}
+
+.education-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.education-logo {
+  width: 55px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.education-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.education-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.education-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.education-dates {
+  color: #888;
+  font-size: 12px;
+  white-space: nowrap;
+  margin-left: auto;
+}
+
+
+
+.experience-with{
+  margin-top: 50px;
+}
+.experience-item {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.experience-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+
+
+
+
+.dark-mode .dark-mode-icon {
+  filter: invert(1);
+}
+
+
+.contact-container {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.contact-badge {
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.contact-title {
+  font-size: 52px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-text {
+  line-height: 1.8;
+  font-size: 22px;
+  color: #666;
+}
+
+.contact-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+
+.floating-navbar {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px 15px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: background 0.3s ease;
+}
+
+.nav-item {
+  text-decoration: none;
+  width: 35px;
+  height: 35px;
+  padding: 8px;
+  transition: 0.3s;
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
+}
+
+.theme-toggle {
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+.dark-mode {
+  background: #222;
+  color: white;
+}
+
+.dark-mode p {
+  color: #888888;
+}
+
+.dark-mode h3 {
+  color: #b5b4b4;
+}
+.dark-mode .contact-badge {
+  background: white;
+  color: black;
+
+}
+
+
+.dark-mode .floating-navbar {
+  background: #333;
+  color: white;
+}
+
+.theme-icon{
+  height: 33px;
+  width: 33px;
+  padding: 5px;
+}
+
+.floating-navbar a:first-child {
+  height: 39px;
+  width: 39px;
+}
+
+
+
+.floating-navbar::before,
+.floating-navbar::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 1px;
+  height: 60%;
+  background-color: #bfbfbf;
+  transform: translateY(-50%);
+}
+
+
+.floating-navbar::before {
+  left: 26%;
+}
+
+.floating-navbar::after {
+  right: 24%;
+}
