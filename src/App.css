@@ -65,9 +65,15 @@ img {
 }
 
 .education-logo {
-  width: 55px;
+  max-width: 100%;
+  max-height: 100%;
+  width: 60px;
   height: 60px;
-  object-fit: cover;
+  object-fit: contain;
+  border-radius: 50%;
+}
+.education-logo:last-child {
+
 }
 
 .education-info {
