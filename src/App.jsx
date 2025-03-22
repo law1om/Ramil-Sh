@@ -15,7 +15,7 @@ export default function Introduce() {
                 <div className="intro">
                     <div className="introduce">
                         <div className="text">
-                            <h1>Hi, I am Ramil <span className="wave">👋</span></h1>
+                            <h1>Hi, I am Ramil</h1>
                             <h3 className="subtitle">A 17-year-old software developer, specializing in building web applications</h3>
                         </div>
                     </div>
