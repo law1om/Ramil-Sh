@@ -72,9 +72,6 @@ img {
   object-fit: contain;
   border-radius: 50%;
 }
-.education-logo:last-child {
-
-}
 
 .education-info {
   flex-grow: 1;
@@ -201,10 +198,31 @@ img {
   height: 35px;
   padding: 8px;
   transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
 }
 
 .nav-item:hover {
   transform: scale(1.1);
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.nav-item.active {
+  color: #393c3f;
+  font-weight: 600;
+}
+
+.nav-item.active:hover {
+  color: #878c91;
+  background: rgba(0, 123, 255, 0.1);
+}
+
+.nav-item svg {
+  width: 100%;
+  height: 100%;
 }
 
 .theme-toggle {
@@ -213,10 +231,31 @@ img {
   font-size: 20px;
   cursor: pointer;
   transition: 0.3s;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  width: 35px;
+  height: 35px;
 }
 
 .theme-toggle:hover {
   transform: scale(1.1);
+  color: #32363a;
+}
+
+.theme-toggle svg {
+  width: 100%;
+  height: 100%;
+}
+
+.dark-mode .theme-toggle {
+  color: #fff;
+}
+
+.dark-mode .theme-toggle:hover {
+  color: #32363a;
 }
 
 .dark-mode {
@@ -241,6 +280,25 @@ img {
 .dark-mode .floating-navbar {
   background: #333;
   color: white;
+}
+
+.dark-mode .nav-item {
+  color: #fff;
+}
+
+.dark-mode .nav-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.dark-mode .nav-item.active {
+  color: #a2a4a6;
+  font-weight: 600;
+}
+
+.dark-mode .nav-item.active:hover {
+  color: #ced0d2;
+  background: rgba(102, 179, 255, 0.1);
 }
 
 .theme-icon{
@@ -269,9 +327,217 @@ img {
 
 
 .floating-navbar::before {
-  left: 26%;
+  left: 22%;
 }
 
 .floating-navbar::after {
-  right: 24%;
+  right: 20%;
+}
+
+/* Projects Page Styles */
+.projects-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.projects-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.projects-subtitle {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project-card.expanded {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.project-status {
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  margin-left: 15px;
+}
+
+.project-status.completed {
+  background: #28a745;
+}
+
+.project-status.in-progress {
+  background: #ffc107;
+  color: #333;
+}
+
+.project-status.planned {
+  background: #6c757d;
+}
+
+.project-content {
+  padding: 25px;
+}
+
+.project-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.project-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.project-details {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.project-technologies h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tech-tag {
+  background: #f0f0f0;
+  color: #333;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.live-link {
+  background: #000000;
+  color: white;
+}
+
+.live-link:hover {
+  background: #737272;
+  transform: translateY(-2px);
+}
+
+.github-link {
+  background: #242323;
+  color: white;
+}
+
+.github-link:hover {
+  background: #555;
+  transform: translateY(-2px);
+}
+
+/* Dark mode styles for projects */
+.dark-mode .project-card {
+  background: #333;
+  color: white;
+}
+
+.dark-mode .project-title {
+  color: white;
+}
+
+.dark-mode .project-description {
+  color: #ccc;
+}
+
+.dark-mode .project-technologies h4 {
+  color: white;
+}
+
+.dark-mode .tech-tag {
+  background: #555;
+  color: white;
+}
+
+.dark-mode .project-details {
+  border-top-color: #555;
+}
+
+.dark-mode .projects-subtitle {
+  color: #ccc;
+}
+
+.dark-mode .project-status.completed {
+  background: #28a745;
+}
+
+.dark-mode .project-status.in-progress {
+  background: #ffc107;
+  color: #333;
+}
+
+.dark-mode .project-status.planned {
+  background: #6c757d;
 }
