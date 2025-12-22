@@ -25,13 +25,31 @@ const Projects = () => {
             githubUrl: "https://github.com/law1om/testing-platform",
         },
         {
+            id: 3,
+            title: "Budget Tracker",
+            description: "A full-featured budget tracking application with user registration, income/expense management, category management, transaction history, and analytics. Includes cloud storage for data synchronization across devices.",
+            shortDescription: "Mobile budget management app",
+            technologies: ["Flutter", "Spring Boot", "PostgreSQL", "JWT", "REST API"],
+            liveUrl: "#",
+            githubUrl: "https://github.com/law1om/budget-tracker",
+        },
+        {
             id: 4,
-            title: "Social Media Analytics",
-            description: "An analytics platform for social media with data visualization, reporting, and real-time brand mention monitoring.",
-            shortDescription: "Social media analytics",
-            technologies: ["React", "Python", "PostgreSQL", "D3.js"],
-            liveUrl: "https://social-analytics-demo.com",
-            githubUrl: "https://github.com/law1om/social-analytics",
+            title: "Happy Tails Platform",
+            description: "A full-stack mobile platform for managing animal shelters and pet adoption. Designed for social impact, featuring comprehensive shelter management capabilities.",
+            shortDescription: "Animal shelter management app",
+            technologies: ["Flutter", "Dart", "Java", "Spring Boot", "PostgreSQL", "JWT"],
+            liveUrl: "#",
+            githubUrl: "https://github.com/law1om/happy-tails-platform",
+        },
+        {
+            id: 5,
+            title: "Bank Analytics Platform",
+            description: "An interactive dashboard for monitoring strategic bank goals, analyzing division performance, tracking task progress, and generating analytical reports. Features Excel import functionality for actual plans.",
+            shortDescription: "Banking KPI dashboard",
+            technologies: ["React", "Spring Boot", "PostgreSQL", "Recharts", "Apache POI"],
+            liveUrl: "#",
+            githubUrl: "https://github.com/law1om/analytics_platform",
         }
     ];
     

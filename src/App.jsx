@@ -32,7 +32,7 @@ export default function App() {
                                         <h3 className="subtitle">A 18-year-old software developer, specializing in building web applications</h3>
                                     </div>
                                 </div>
-                                <img src="/avat.png" alt="Ramil's avatar" className="avatar" />
+                                <img src="/avat.jpg" alt="Ramil's avatar" className="avatar" />
                             </div>
                         </motion.div>
 
